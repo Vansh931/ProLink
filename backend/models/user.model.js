@@ -45,7 +45,8 @@ const userSchema = new mongoose.Schema({
         }
     ],
     location:{
-        type:String
+        type:String,
+        default:"India"
     },
     gender:{
         type:String,
@@ -53,7 +54,7 @@ const userSchema = new mongoose.Schema({
     },
     experience:[
         {
-            title:{type:String},
+            role:{type:String},
             company:{type:String},
             description:{type:String}
         }
